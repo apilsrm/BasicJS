@@ -40,14 +40,19 @@
 // console.log(find);
 // console.log(typeof find);
 
-let fname = "Apil";
-let lname = "Sharma";
-// console.log("my name is : " + fname + " " + lname + ".");
-// console.log( `my name is : ${fname} ${lname} . `);
+// let fname = "Apil";
+// let lname = "Sharma";
+// // console.log("my name is : " + fname + " " + lname + ".");
+// // console.log( `my name is : ${fname} ${lname} . `);
 
-const myGreeting = `my name is : ${fname} ${lname} . `;
-console.log (`Hello Everyone: ${myGreeting}`); 
+// const myGreeting = `my name is : ${fname} ${lname} . `;
+// console.log (`Hello Everyone: ${myGreeting}`); 
 
+
+let name = " apil"
+console.log(name);
+console.log(typeof name);
+console.log(typeof Number(name));
 
 
 
