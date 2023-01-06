@@ -49,10 +49,56 @@
 // console.log (`Hello Everyone: ${myGreeting}`); 
 
 
-let name = " apil"
-console.log(name);
-console.log(typeof name);
-console.log(typeof Number(name));
+// let name = " apil"
+// console.log(name);
+// console.log(typeof name);
+// console.log(typeof Number(name));
+
+//Type conversion and strings methods
+// let number = 777;
+// console.log(number);
+// console.log(typeof String(number));
+//console.log(typeof number.toString());
+
+//String method
+let str = "hello , world";
+let y = "how r u ";
+let z = "   How  is       you";
+
+//charAt
+//console.log(str.charAt(0));
+
+//length 
+// console.log(str.length);
+
+//concat
+//console.log(str.concat(y));
+//console.log(str.concat(" jjj kk j"));
+
+//replace
+//console.log(str.replace("hello", "hi"));
+//Indexof
+//console.log(str.indexOf("o")); //4 first
+//console.log(str.lastIndexOf("l"));//9 last ko
+
+//Includes
+//console.log(str.includes("hello")); //true
+//console.log(str.includes("hhj")); //false
+
+//split
+// let str = "hello , world, apil g ";
+// console.log(str.split(","));
+// console.log(str.split("l"));
+
+//lower ad uppercase
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+
+//trim
+console.log(z.trim()); //agadi ko space lai hatauxa
+//slice
+console.log(str.slice(0, 4)); //hell
+
 
 
 
