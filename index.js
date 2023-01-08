@@ -61,9 +61,9 @@
 //console.log(typeof number.toString());
 
 //String method
-let str = "hello , world";
-let y = "how r u ";
-let z = "   How  is       you";
+// let str = "hello , world";
+// let y = "how r u ";
+// let z = "   How  is       you";
 
 //charAt
 //console.log(str.charAt(0));
@@ -99,15 +99,70 @@ let z = "   How  is       you";
 //console.log(z.trim()); 
 //slice
 //console.log(str.slice(0, 5)); //hell
-const heading = document.getElementById("mycss");
-heading.innerText = " i amapil ";
+// const heading = document.getElementById("mycss");
+// heading.innerText = " i amapil ";
 
-heading.style.background = "red";
-heading .style.color= "black";
-heading.style.textAlign = "center";
+// heading.style.background = "red";
+// heading .style.color= "black";
+// heading.style.textAlign = "center";
 
+//condition if elseif else
+// let email = "sharmaapil05@gmail.com";
+// let password = "123apil";
 
+// if (email == "sharmaapil05@gmail.com" && password == "123apil")
+//    {alert("Login Success");}
+// else
+// {alert("invalid credential");}   
 
+//weather
+//  let weather = "wijnter"
 
+//  if (weather === 'cloudy')
+//    { alert("its darks ");}
+// else if (weather === "winter")
+//   {alert("its cold");}
+// else {
+//     alert(" shut the f up ☝🏻 ");}
 
+// let day = "Sunday";
+// switch (day) {
+//     case "Sunday":
+//         alert("Today is Sunday");
+//         break;
 
+//     case "Monday":
+//         alert("Today is Monday");
+//         break;
+
+//      case "Saturday":
+//         alert("Today is Saturday");
+//         break;
+            
+              
+
+//     default:
+//         alert("invalid");
+//         break;
+// }
+   
+let  Y = prompt("enter the grade"); 
+switch (Y) {
+    case "A":
+       //alert("excellent grade");
+        document.write("excellent grade");
+        break;
+
+    case "B":
+        alert("verygood grade");
+        break;
+
+     case "C":
+        alert("good grade");
+        break;
+            
+    default:
+        alert("ifail");
+        break;
+}
+   
