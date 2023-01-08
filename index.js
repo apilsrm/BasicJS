@@ -94,10 +94,19 @@ let z = "   How  is       you";
 // console.log(str.toLowerCase());
 // console.log(str.toUpperCase());
 
-//trim
-console.log(z.trim()); //agadi ko space lai hatauxa
+//trim --- aagadi ko space lai hatauxa i.e kotesonpaxiko space hatauxa
+
+//console.log(z.trim()); 
 //slice
-console.log(str.slice(0, 4)); //hell
+//console.log(str.slice(0, 5)); //hell
+const heading = document.getElementById("mycss");
+heading.innerText = " i amapil ";
+
+heading.style.background = "red";
+heading .style.color= "black";
+heading.style.textAlign = "center";
+
+
 
 
 
