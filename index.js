@@ -146,23 +146,98 @@
 //         break;
 // }
    
-let  Y = prompt("enter the grade"); 
-switch (Y) {
-    case "A":
-       //alert("excellent grade");
-        document.write("excellent grade");
-        break;
+// let  Y = prompt("enter the grade"); 
+// switch (Y) {
+//     case "A":
+//        //alert("excellent grade");
+//         document.write("excellent grade");
+//         break;
 
-    case "B":
-        alert("verygood grade");
-        break;
+//     case "B":
+//         alert("verygood grade");
+//         break;
 
-     case "C":
-        alert("good grade");
-        break;
+//      case "C":
+//         alert("good grade");
+//         break;
             
-    default:
-        alert("ifail");
-        break;
-}
+//     default:
+//         alert("ifail");
+//         break;
+// }
    
+
+// for(i=0 ; i <= 10;i++)
+// {document.write(i );}
+
+
+// const number = [1, 2, 3, 4, 5, "apil"];
+// document.write(number.length);
+// alert(number[5]);
+
+//while loop
+// let x = 0;
+// while (x<5) {
+//     document.write(x);
+//     x++; }
+
+// do{
+//     document.write(x);
+//     x++;
+// }
+// while(x<5)
+
+//Array
+
+// const myArray = [1, 2, 3, "apil", "g"];
+// document.write(myArray.length);
+
+//push to add element in arry
+// const newAdd = myArray.push("good");
+// document.write(myArray);
+
+//unshift method
+// const newAdd = [ 1, 2, 4, "sdf"];
+// document.write(newAdd.unshift("sharma"));
+// document.write(newAdd);
+
+
+//pop 
+// const newAdd = [ 1, 2, 4, "sdf"];
+// console.log(newAdd);
+// const newData = newAdd.pop();
+// console.log(newData);
+
+//shift 
+// const newAdd = [ 1, 2, 4, "sdf"];
+// const newData = newAdd.shift();
+// console.log(newAdd);
+// console.log(newData);
+
+//concat
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9,10];
+// console.log(arr1.concat(arr2));
+
+//Filter
+//let newArr = [11, 12, 13, 14, 15, "api"];
+//console.log(newArr);
+//const findFlter = newArr.filter((n) => n>5);
+//console.log(findFlter);
+//console.log(newArr);
+
+//Splice 
+// console.log(newArr.splice(2,4));
+
+//reverse
+//console.log(newArr.reverse());
+
+//Sorting
+let newArr = [11, 14, 13, 1, 15, 2, 7, 56, 78];
+console.log(newArr)
+const myData = newArr.sort();
+console.log(myData);
+console.log(newArr)
+
+
+
