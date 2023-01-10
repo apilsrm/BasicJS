@@ -227,17 +227,153 @@
 //console.log(newArr);
 
 //Splice 
-// console.log(newArr.splice(2,4));
+ //console.log(newArr.splice(2,4));
 
 //reverse
 //console.log(newArr.reverse());
 
 //Sorting
-let newArr = [11, 14, 13, 1, 15, 2, 7, 56, 78];
-console.log(newArr)
-const myData = newArr.sort();
-console.log(myData);
-console.log(newArr)
+// let newArr = [8,1, 4, 5, 3, 2, ];
+// console.log(newArr)
+// const myData = newArr.sort();
+// console.log(myData);
+// console.log(newArr)
 
+//let myarr = []
 
+// myarr [0] =1;
+// console.log(myarr)
 
+// for (let i = 0; i <10; i++)
+// {
+//     myarr[i] =i ;
+//     myarr.push(i);
+//     console.log(myarr);
+// }
+//OBJECT
+// const myPro = {
+//     fname : "apil",
+//     lname : "sharma",
+//     age : 21,
+//     isMarried : false,
+//     salary :function(){
+//         console.log("no salary");
+//         return true;
+
+//     },
+// };
+// console.log(myPro);
+// console.log(myPro.lname);
+// console.log(myPro.isMarried);
+// console.log(myPro["age"]);
+// const ans = myPro.salary();
+// console.log(ans);
+
+// const car = {
+//     make : "toyota",
+//     model :"camry",
+//     color : "red",
+//     runWheel : 4,
+//     isElectric : false,
+//     startEngine : function(){
+//         console.log("Start Engine");
+//         return false;        
+//     },
+//     endEngine: function(){
+//         console.log("end engine");
+//         return false;
+//     },
+// }
+// console.log(car);
+// console.log(car.model);
+// console.log(car.startEngine());
+// console.log(car.endEngine());
+
+// if (car.startEngine()){
+//     console.log("car is ready for running");
+//     }
+// else if(car.endEngine()){
+//     console.log("Car is not ready for running");
+//     }
+// else{
+//     console.log("invalid");
+// }    
+ //Function
+//  function myData(params) {
+//     let a = 90;
+//     let b = 8;
+//     let result= (a + b)/2;
+//     console.log(result);
+    
+//  }
+//  myData();
+
+// function newFun(a, b, c) {
+//     return(a + b + c);   
+// }
+// const ans = newFun(2, 4, 6);
+// const ans2 = newFun(1, 3, 5);
+// console.log(ans);
+// console.log(ans2);
+
+// const myData = function() {
+//         let a = 90;
+//         let b = 8;
+//         let result= (a + b)/2;
+//         console.log(result);
+        
+//      }
+// console.log(myData);     
+
+// function myData (arr = []){
+//     let total = 0;
+//     for (let i =0; i<arr.length; i++){
+//     total += arr[i];    
+//     }
+//     return total;
+// }
+// const ans = myData([5,1,2,4,3,2])
+// console.log(ans);
+
+//Scoping
+// let x = 90; //global scope 
+// function myScope(){
+//     let x = 50; //local scope
+// }
+
+// var x = 90;
+// function myVar(){
+//     var x = 9 +9;
+//     console.log(x);
+// }
+// console.log(x);
+// myVar();
+
+// vvar in Block
+
+// function myBlock(){
+//     if (true){
+//         var x = 9 * 9;
+//         console.log(x);
+//     }
+//     console.log(x+1);
+// }
+// myBlock();
+
+//let in block anf function scope
+// function myFun(){
+//     if(true){
+//         let y = (5+6)/2;
+//         //console.log(y);
+//     }
+// }
+// myFun();
+ 
+//const in block space
+
+function myCalc(){
+    if (true){
+        const x = (((9+5)/2)*3);
+        console.log(x);
+    }
+} myCalc();
