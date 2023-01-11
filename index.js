@@ -371,9 +371,60 @@
  
 //const in block space
 
-function myCalc(){
-    if (true){
-        const x = (((9+5)/2)*3);
-        console.log(x);
-    }
-} myCalc();
+// function myCalc(){
+//     if (true){
+//         const x = (((9+5)/2)*3);
+//         console.log(x);
+//     }
+// } myCalc();
+
+//DOM MANIPULATION and its method
+// const ans = document.head;
+// console.log(ans);
+
+// const ans = document.body.firstElementChild;
+//console.log(ans);
+//const ans = document.body.lastElementChild;
+//console.log(ans);
+
+// const result = document.getElementById("myIs");
+// console.log(result);
+
+const result = document.getElementById("myIs");
+result.innerHTML = "Apil sharma <b> what is your </b>";
+// result.innerText= "Ronldo gayo khadi"; //no change
+
+// const ans = document.getElementsByClassName("myyour");
+// console.log(ans[0]); //array ma store huncha  bcz class haru multipul huncha
+// ans[0].innerHTML = "Asdfghjkljcui<b> hat the the </>b";
+
+const newData = document.getElementsByTagName("span");  //tags also store value in array sm as class
+console.log(newData);
+newData[0].innerHTML = " I am always Happy ";
+
+const myEmail = document.getElementsByName("email");
+console.log(myEmail[0]);
+myEmail[0].style.width = "50px";
+
+// const myQuery = document.querySelectorAll("clickme");
+// console.log(myQuery);
+
+const myButton = document.getElementById("clickme");
+myButton.innerText= "Save";
+myButton.style.background = "blue";
+myButton.style.color = "white";
+myButton.style.padding = "10px";
+myButton.style.border = "none";
+myButton.style.cursor = "pointer";
+
+// const Creat = document.createElement("h2");
+// //console.log(Creat); //console ma creat garxa page ma nagarikina
+//  document.body.append(Creat);
+
+myButton.onclick = myFunc //reference pass gareko ho
+function myFunc(){
+const Creat = document.createElement("h2");
+
+Creat.innerHTML = "the is teh";
+document.body.append(Creat);}
+// myFunc();
