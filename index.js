@@ -398,33 +398,117 @@ result.innerHTML = "Apil sharma <b> what is your </b>";
 // console.log(ans[0]); //array ma store huncha  bcz class haru multipul huncha
 // ans[0].innerHTML = "Asdfghjkljcui<b> hat the the </>b";
 
-const newData = document.getElementsByTagName("span");  //tags also store value in array sm as class
-console.log(newData);
-newData[0].innerHTML = " I am always Happy ";
+// const newData = document.getElementsByTagName("span");  //tags also store value in array sm as class
+// console.log(newData);
+// newData[0].innerHTML = " I am always Happy ";
 
-const myEmail = document.getElementsByName("email");
-console.log(myEmail[0]);
-myEmail[0].style.width = "50px";
+// const myEmail = document.getElementsByName("email");
+// console.log(myEmail[0]);
+// myEmail[0].style.width = "50px";
 
 // const myQuery = document.querySelectorAll("clickme");
 // console.log(myQuery);
 
-const myButton = document.getElementById("clickme");
-myButton.innerText= "Save";
-myButton.style.background = "blue";
-myButton.style.color = "white";
-myButton.style.padding = "10px";
-myButton.style.border = "none";
-myButton.style.cursor = "pointer";
+// const myButton = document.getElementById("clickme");
+// myButton.innerText= "Save";
+// myButton.style.background = "blue";
+// myButton.style.color = "white";
+// myButton.style.padding = "10px";
+// myButton.style.border = "none";
+// myButton.style.cursor = "pointer";
 
 // const Creat = document.createElement("h2");
 // //console.log(Creat); //console ma creat garxa page ma nagarikina
 //  document.body.append(Creat);
 
-myButton.onclick = myFunc //reference pass gareko ho
-function myFunc(){
-const Creat = document.createElement("h2");
+// myButton.onclick = myFunc //reference pass gareko ho
+// function myFunc(){
+// const Creat = document.createElement("h2");
 
-Creat.innerHTML = "the is teh";
-document.body.append(Creat);}
-// myFunc();
+// Creat.innerHTML = "the is teh";
+// document.body.append(Creat);}
+// // // myFunc();
+
+// // let button = document.getElementById("myButton");
+// // button.addEventListener("click", function())
+// // console.log("the button was click");
+
+// // const MyCountry = document.querySelector("#myCountry");
+// // console.log(MyCountry);
+// // MyCountry.innerHTML = "Nepal is a small country"; //dom manipulate using query; 
+
+// const myclear = document.querySelectorAll("button");
+// console.log(myclear);
+// myclear[1].innerText = "this is a clear button";
+// for(let i =0 ; i <myclear.length; i++)
+// {
+// myclear[1].innerText = "this is a clear button"; 
+// myclear[1].style.background = "#00FFFF";
+// myclear[1].style.color = "green";
+// myclear[1].style.padding = "10px";
+// myclear[1].style.border = "none";
+// myclear[1].style.cursor = "pointer"; 
+// } 
+
+// function Deletethis(){
+// const pleasedel= document.querySelector("h2");
+// pleasedel.remove();}
+
+// myButton.onclick = myFunc; //as a reference function lai use gareko..fxn call nagrikina bcz click garesi matrai clear garni ho
+// myclear[1].onclick = Deletethis;
+
+
+// const spntxt = document.querySelectorAll("span")
+// console.log(spntxt);
+// for(let i =0 ; i <spntxt.length; i++)
+// {
+// spntxt[1].innerText = " span"; 
+// spntxt[1].style.color = "red";
+
+// }
+
+//ADvance array method
+//for each
+//iif we use for each it cannot return array . it only iterate main array
+// let arr = [10, 2, 4, 6, 8];
+// //const Myresult = ()=> // function () == ()=> fat array function}
+// arr.forEach((value,index,array)=>{
+// console.log(index + "=" + value);
+// });
+
+let arr = [10, 2, 6, 8, 5, 7, 11];
+
+// const MyForEach = arr.forEach((value,index,array)=>{
+//     return(array[index] = value +2);
+//     });
+// console.log(MyForEach); //its  doesnt return anything
+
+//Map -- if we use map  it return new array after irrate main array;
+// const MyMap = arr.map((valuee, indeex, array)=>{
+//     //console.log(valuee, indeex, array);
+//     return(array[indeex]= valuee +2);
+// });
+// console.log(MyMap)
+
+// //Filter
+// const myFilter = arr.filter((value, index, array) =>{
+   // return value>2;
+    //return value %2 === 0; //for even
+    // return value % 2 !== 0;
+//}); //its returns value  
+// console.log(myFilter); 
+
+//Find method
+// const myFind = arr.find((value, index, array)=>{
+//     return value > 10 ;
+// });
+// console.log(myFind);
+
+//reduce metgod return single value output ma(sum average etc) 
+// const myReduce = arr.reduce((accumultor, curValue, curIndex ,array) =>{
+    // console.log(accumultor, curValue, curIndex );
+     //accumultor += curValue ;
+    //  accumultor = (accumultor + curValue)/2 ;
+    //  return accumultor; 
+
+// }); console.log(myReduce);
