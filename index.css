@@ -4,3 +4,12 @@
     color: red;
     text-align: center;
 }
+
+.newCssDiv{
+    padding: 20px;
+    margin: 20px;
+    background-color: aqua;
+    color: aliceblue;
+    width: auto;
+    cursor: pointer;
+}

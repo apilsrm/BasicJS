@@ -390,8 +390,8 @@
 // const result = document.getElementById("myIs");
 // console.log(result);
 
-const result = document.getElementById("myIs");
-result.innerHTML = "Apil sharma <b> what is your </b>";
+// const result = document.getElementById("myIs");
+// result.innerHTML = "Apil sharma <b> what is your </b>";
 // result.innerText= "Ronldo gayo khadi"; //no change
 
 // const ans = document.getElementsByClassName("myyour");
@@ -476,7 +476,7 @@ result.innerHTML = "Apil sharma <b> what is your </b>";
 // console.log(index + "=" + value);
 // });
 
-let arr = [10, 2, 6, 8, 5, 7, 11];
+//let arr = [10, 2, 6, 8, 5, 7, 11];
 
 // const MyForEach = arr.forEach((value,index,array)=>{
 //     return(array[index] = value +2);
@@ -512,3 +512,47 @@ let arr = [10, 2, 6, 8, 5, 7, 11];
     //  return accumultor; 
 
 // }); console.log(myReduce);
+
+
+//Event listeners
+const NewClick = document.getElementById("myclick");
+const NewBox = document.getElementById("mybox");
+const NewTag = document.getElementById("mytag");
+const MyInput = document.querySelector("input");
+
+NewClick.addEventListener("click", () => {
+    // NewBox.style.background = "red";
+    NewBox.classList.add("newCssDiv");
+});
+NewBox.addEventListener("mouseover", () => {
+    NewClick.style.transform = "scale(1.1)";
+    NewTag.style.background = "yellow";
+});
+NewBox.addEventListener("mouseout", () => { 
+NewClick.style.transform = " ";
+NewTag.style.background ="";
+});
+
+
+MyInput.addEventListener("change", (e) => {
+console.log(e);
+console.log(e.target.value);
+} );
+
+NewBox.addEventListener("dblclick", () => {
+document.body.style.background = "black"
+});
+
+NewBox.addEventListener("click", () => {
+    document.body.style.background = "white"
+});
+
+//rightclick 
+NewClick.addEventListener("contextmenu", () => {
+    e.preventDefault();
+    NewClick.style.background = "blue"
+});
+addEventListener("contextmenu", (e) => {
+e.preventDefault();
+});
+
