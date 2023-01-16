@@ -515,44 +515,134 @@
 
 
 //Event listeners
-const NewClick = document.getElementById("myclick");
-const NewBox = document.getElementById("mybox");
-const NewTag = document.getElementById("mytag");
-const MyInput = document.querySelector("input");
+// const NewClick = document.getElementById("myclick");
+// const NewBox = document.getElementById("mybox");
+// const NewTag = document.getElementById("mytag");
+// const MyInput = document.querySelector("input");
 
-NewClick.addEventListener("click", () => {
-    // NewBox.style.background = "red";
-    NewBox.classList.add("newCssDiv");
-});
-NewBox.addEventListener("mouseover", () => {
-    NewClick.style.transform = "scale(1.1)";
-    NewTag.style.background = "yellow";
-});
-NewBox.addEventListener("mouseout", () => { 
-NewClick.style.transform = " ";
-NewTag.style.background ="";
-});
+// NewClick.addEventListener("click", () => {
+//     // NewBox.style.background = "red";
+//     NewBox.classList.add("newCssDiv");
+// });
+// NewBox.addEventListener("mouseover", () => {
+//     NewClick.style.transform = "scale(1.1)";
+//     NewTag.style.background = "yellow";
+// });
+// NewBox.addEventListener("mouseout", () => { 
+// NewClick.style.transform = " ";
+// NewTag.style.background ="";
+// });
 
 
-MyInput.addEventListener("change", (e) => {
-console.log(e);
-console.log(e.target.value);
-} );
+// MyInput.addEventListener("change", (e) => {
+// console.log(e);
+// console.log(e.target.value);
+// } );
 
-NewBox.addEventListener("dblclick", () => {
-document.body.style.background = "black"
-});
+// NewBox.addEventListener("dblclick", () => {
+// document.body.style.background = "black"
+// });
 
-NewBox.addEventListener("click", () => {
-    document.body.style.background = "white"
-});
+// NewBox.addEventListener("click", () => {
+//     document.body.style.background = "white"
+// });
 
-//rightclick 
-NewClick.addEventListener("contextmenu", () => {
-    e.preventDefault();
-    NewClick.style.background = "blue"
-});
-addEventListener("contextmenu", (e) => {
-e.preventDefault();
-});
+// //rightclick 
+// NewClick.addEventListener("contextmenu", () => {
+//     e.preventDefault();
+//     NewClick.style.background = "blue"
+// });
+// addEventListener("contextmenu", (e) => {
+// e.preventDefault();
+// });
+
+// const MyClick =document.getElementById("myclick");
+// const HeyInput = document.getElementById("myinput");
+// const MyClear = document.getElementById("myclear");
+
+// const CallMeBack = () => {
+//    // alert(HeyInput.value); 
+//    //sessionStorage.setItem("key", HeyInput.value);
+//    localStorage.setItem("name", JSON.stringify({fname ="apil'', lname : ''sharma ", age : 23})
+//    );
+// };
+// MyClick.addEventListener("click", CallMeBack);
+// MyClear.addEventListener("click",DeleteToken);
+
+// // if (sessionStorage.getItem("key")){
+// //  alert(sessionStorage.getItem("key"));}
+
+// if (localStorage.getItem("name")){
+//  //alert(localStorage.getItem("name"));
+// console.log(JSON.parse(localStorage.getItem("name")))};
+
+// MyClear.addEventListener("click", DeleteToken);
+// function DeleteToken() {
+//    localStorage.clear();}
+
+ //Math object
+ //const value  = Math.random();
+ //onsole.log(value);
+
+//Abs
+// const value  = Math.abs(-5);
+// console.log(value); //ans 5
+
+// const value  = Math.max(2,4,10,2);
+// console.log(value);
+
+// const value  = Math.min(2,4,10,2);
+// console.log(value);
+
+// function sub (a,b){
+//    return Math.abs(a-b);
+// }
+// console.log(sub(2,6)); //ans 4
+
+//trunk
+// const value = Math.round(5.8);
+// console.log(value); //ans 5
+
+// const value = Math.round(4.5)
+// console.log(value); //ans 5
+
+// const value = Math.floor(4.5)
+// console.log(value); //ans 4
+
+// const value  = Math.ceil(5.30);
+// console.log(value); //ans 6
+
+
+//const value  = Math.pow(2,4); //16
+// const value  = Math.sqrt(2,4);//1.4142...
+// const value  = Math.random();
+// console.log(value);
+
+//Date in js
+// const myDate = new Date();
+// console.log(myDate);
+
+// const OneByone = new Date();
+// console.log(OneByone.getDate());
+// console.log(OneByone.getFullYear());
+// console.log(OneByone.getMilliseconds());
+//console.log(OneByone.getUTCDay()); //0 sunday 1 monday 3 tuesday
+// console.log(OneByone.getTimezoneOffset());
+// console.log(OneByone.toISOString());
+//console.log(OneByone.toLocaleTimeString());  //4:15:32 pm
+
+//Set time out
+// setTimeout (() => {
+//    console.log("this is timeset");
+// },3000 );
+
+const setId = setInterval(() => {
+   console.log("this is timeset");
+},1000 );
+
+setTimeout (() => {
+   clearInterval(setId);
+   console.log("this is timestop");
+},3000 );
+
 
