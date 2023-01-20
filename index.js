@@ -636,13 +636,117 @@
 //    console.log("this is timeset");
 // },3000 );
 
-const setId = setInterval(() => {
-   console.log("this is timeset");
-},1000 );
+// const setId = setInterval(() => {
+//    console.log("this is timeset");
+// },1000 );
 
-setTimeout (() => {
-   clearInterval(setId);
-   console.log("this is timestop");
-},3000 );
+// setTimeout (() => {
+//    clearInterval(setId);
+//    console.log("this is timestop");
+// },3000 );
 
 
+
+//constructor function
+
+// function BankAccount(CustomarName , balance = 0){
+//    this.CustomarName = CustomarName;
+//    this.balance = balance;
+//    this.AccountNumber = Date.now();
+
+   // this.deposite = function(amount){
+   //   this.balance += amount;
+   //  };
+   // this.withdraw = function(amount){
+   //    this.balance -= amount;
+   // }; 
+
+//    } 
+
+   
+// BankAccount.prototype.deposite = function(amount){
+//    this.balance += amount;
+//    console.log(`Deposited ${amount}, Current balance is : ${this.balance}`);
+//   };
+
+// BankAccount.prototype.withdraw = function(amount){
+//    if(this.balance>= amount){
+//       this.balance +=amount;
+//   console.log(`withdraw balance is ${amount} , Current balance is : ${this.balance}`);
+//    }else{
+//       console.log(`Balance insufficent , Current balance ${this.balance}`);
+//    }
+// }; 
+
+//    const ramAccount = new BankAccount("Ram", 5000);
+//    const hariAccount = new BankAccount("Hari");
+//    // const shyamAccount = new BankAccount("Shyam");
+
+//    //hariAccount.deposite(8000);
+//    ramAccount.withdraw(6000);
+//    // shyamAccount.deposite(1000);
+//    // console.log(ramAccount , hariAccount ,shyamAccount);
+
+//    console.log(ramAccount ,hariAccount);
+
+
+//Class Based OOP concept in JS
+
+// constructor  is a special method that is used to initialize the object when it is created
+
+
+// class BankAccount {
+//    // CustomerName;
+//    // accountNumber;
+//    // balance;
+
+// //constructor
+// constructor(CustomerName,balance = 0){
+//    this.CustomerName = CustomerName;
+//    this.accountNumber = Date.now();
+//    this.balance = balance;
+// }
+// deposite(amount){
+//    this.balance = this.balance + amount;
+//    console.log(`Deposited ${amount}, Current balance is : ${this.balance}`);
+// }
+
+// withdraw(amount){
+//    if(this.balance>= amount){
+//       this.balance -= amount;
+//       console.log(`withdraw balance is ${amount} , Current balance is : ${this.balance}`);
+//          }
+//    else{
+//       console.log(`Balance insufficent , Current balance ${this.balance}`);
+//       }; 
+// }
+// }
+
+// const shyamAccount = new BankAccount("Shyam" , 5000);
+// const gitaAccount = new BankAccount("gita");
+// gitaAccount.deposite(6000);
+// shyamAccount.withdraw(5000);
+
+// console.log(shyamAccount , gitaAccount);
+
+
+class Person {
+  
+constructor ( Fname, Lname, Age,Gender){
+   this.Fname = Fname;
+   this.Lname = Lname;
+   this.Age = Age;
+   this.Gender = Gender;
+
+   
+}
+
+sayHello(){
+   console.log(`My name is ${this.Fname} ${this.Lname} and my age is ${this.Age}`);
+}
+}
+
+const person_1 = new Person("Apil" , "sharma" , 21 , "M");
+// console.log(person_1);
+person_1.sayHello(); //My name is Apil sharma and my age is 21
+console.log(person_1); //whole object 
